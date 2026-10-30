@@ -46,19 +46,24 @@ pub struct Config {
 }
 
 fn background_color_default() -> ConfigColor {
-    Color::BLACK.into()
+    // Bun OS Aphrody palette: surface-container-lowest
+    Color::rgb(0x0C, 0x0E, 0x17).into()
 }
 fn bar_color_default() -> ConfigColor {
-    Color::rgba(0x1B, 0x1B, 0x1B, 224).into()
+    // Aphrody surface at Orbital's bar alpha
+    Color::rgba(0x11, 0x13, 0x1D, 224).into()
 }
 fn bar_highlight_color_default() -> ConfigColor {
-    Color::rgba(0x36, 0x36, 0x36, 224).into()
+    // Aphrody primary-container
+    Color::rgba(0x2E, 0x3F, 0x95, 224).into()
 }
 fn text_color_default() -> ConfigColor {
-    Color::rgb(0xE7, 0xE7, 0xE7).into()
+    // Aphrody on-surface
+    Color::rgb(0xE1, 0xE3, 0xF2).into()
 }
 fn text_highlight_color_default() -> ConfigColor {
-    Color::rgb(0xE7, 0xE7, 0xE7).into()
+    // Aphrody primary
+    Color::rgb(0xA9, 0xB8, 0xFF).into()
 }
 
 /// Create a sane default Orbital [Config] in case none is supplied or it is unreadable
